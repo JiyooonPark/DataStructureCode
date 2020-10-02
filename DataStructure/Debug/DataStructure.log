@@ -1,0 +1,7 @@
+﻿  practice.c
+C:\Users\jiyoon\source\repos\DataStructure\DataStructure\practice.c(31,20): warning C4244: 'return': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\jiyoon\source\repos\DataStructure\DataStructure\practice.c(52,13): warning C4047: '함수': 'const char *const '의 간접 참조 수준이 'int'과(와) 다릅니다.
+C:\Users\jiyoon\source\repos\DataStructure\DataStructure\practice.c(52,10): warning C4024: 'printf': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+C:\Users\jiyoon\source\repos\DataStructure\DataStructure\practice.c(55,13): warning C4047: '함수': 'const char *const '의 간접 참조 수준이 'int'과(와) 다릅니다.
+C:\Users\jiyoon\source\repos\DataStructure\DataStructure\practice.c(55,10): warning C4024: 'printf': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+  DataStructure.vcxproj -> C:\Users\jiyoon\source\repos\DataStructure\Debug\DataStructure.exe
