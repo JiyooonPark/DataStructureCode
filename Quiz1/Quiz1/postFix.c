@@ -3,6 +3,9 @@
 
 #define MAX_STACK_SIZE 100
 
+//8253-9*+7-*
+//423*+2/3+
+
 typedef char element;
 typedef struct stack{
 	element data[MAX_STACK_SIZE];
@@ -53,6 +56,7 @@ int eval(char exp[]) {
 	int op1, op2, value, i = 0;
 	int len = strlen(exp);
 	char ch;
+	int pushed = 0;
 	StackType s;
 
 	init_stack(&s);
@@ -61,20 +65,22 @@ int eval(char exp[]) {
 		if (ch != '+' && ch != '-' && ch != '/' && ch != '*') {
 			value = ch - '0';
 			push(&s, value);
+			pushed++;
 		}
 		else {
 			op2 = pop(&s);
 			op1 = pop(&s);
 			switch (ch) {
-			case '+': push(&s, op1 + op2); break;
-			case '-': push(&s, op1 - op2); break;
-			case '*': push(&s, op1 * op2); break;
-			case '/': push(&s, op1 / op2); break;
+			case '+': push(&s, op1 + op2); pushed++; break;
+			case '-': push(&s, op1 - op2); pushed++; break;
+			case '*': push(&s, op1 * op2); pushed++; break;
+			case '/': push(&s, op1 / op2); pushed++; break;
 			}
 		}
 		//printf("ch : %c\n", ch);
 		//show(&s);
 	}
+	printf("pushed : %d\n", pushed);
 	return pop(&s);
 }
 int main() {
@@ -85,7 +91,7 @@ int main() {
 	scanf("%s", expression);
 
 	result = eval(expression);
-	printf("결과는 : %d", result);
+	printf("결과는 : %d.", result);
 	return 0;
 
 }
