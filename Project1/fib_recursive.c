@@ -6,6 +6,6 @@ int fib_recursive(int n) {
 	if (n == 1) return 1;
 	return fib_recursive(n - 1) + fib_recursive(n - 2);
 }
-int main() {
-	printf("%d", fib_recursive(4));
-}
+//int main() {
+//	printf("%d", fib_recursive(4));
+//}

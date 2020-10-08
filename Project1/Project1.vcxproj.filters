@@ -16,6 +16,9 @@
     <Filter Include="소스 파일\chapter2">
       <UniqueIdentifier>{ea150ec8-949a-4abe-b705-e58bbb4fd4fa}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Quiz1">
+      <UniqueIdentifier>{c06eb291-909f-44f2-ae0b-f4bba19a1e1f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="factorial_recursive.c">
@@ -35,6 +38,15 @@
     </ClCompile>
     <ClCompile Include="fib_iter.c">
       <Filter>소스 파일\chapter2</Filter>
+    </ClCompile>
+    <ClCompile Include="postFix.c">
+      <Filter>소스 파일\Quiz1</Filter>
+    </ClCompile>
+    <ClCompile Include="hanoi.c">
+      <Filter>소스 파일\chapter2</Filter>
+    </ClCompile>
+    <ClCompile Include="Stack.c">
+      <Filter>소스 파일\Quiz1</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
