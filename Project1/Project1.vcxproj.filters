@@ -13,8 +13,17 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\chapter3">
+      <UniqueIdentifier>{96d8e599-d631-47d8-ae24-107e4bcf78c4}</UniqueIdentifier>
+    </Filter>
     <Filter Include="소스 파일\chapter2">
       <UniqueIdentifier>{ea150ec8-949a-4abe-b705-e58bbb4fd4fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Assignment1">
+      <UniqueIdentifier>{0b072903-ca2a-401b-9ff8-862017cb7a3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\chapter4">
+      <UniqueIdentifier>{5f12e360-6a99-4511-8bfb-9d54004fb3a6}</UniqueIdentifier>
     </Filter>
     <Filter Include="소스 파일\Quiz1">
       <UniqueIdentifier>{c06eb291-909f-44f2-ae0b-f4bba19a1e1f}</UniqueIdentifier>
@@ -47,6 +56,42 @@
     </ClCompile>
     <ClCompile Include="Stack.c">
       <Filter>소스 파일\Quiz1</Filter>
+    </ClCompile>
+    <ClCompile Include="poly_1.c">
+      <Filter>소스 파일\chapter3</Filter>
+    </ClCompile>
+    <ClCompile Include="poly_2.c">
+      <Filter>소스 파일\chapter3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\2020-2\1.자료 구조\DataStructure\DS_Project1\DS_Project1\Maze.c">
+      <Filter>소스 파일\Assignment1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\2020-2\1.자료 구조\DataStructure\DS_Project1\DS_Project1\num9.c">
+      <Filter>소스 파일\Assignment1</Filter>
+    </ClCompile>
+    <ClCompile Include="qqq.c">
+      <Filter>소스 파일\chapter3</Filter>
+    </ClCompile>
+    <ClCompile Include="Maze1.c">
+      <Filter>소스 파일\chapter4</Filter>
+    </ClCompile>
+    <ClCompile Include="Stack5.c">
+      <Filter>소스 파일\chapter4</Filter>
+    </ClCompile>
+    <ClCompile Include="num10.c">
+      <Filter>소스 파일\chapter4</Filter>
+    </ClCompile>
+    <ClCompile Include="try1.c">
+      <Filter>소스 파일\Assignment1</Filter>
+    </ClCompile>
+    <ClCompile Include="try2.c">
+      <Filter>소스 파일\Assignment1</Filter>
+    </ClCompile>
+    <ClCompile Include="Maze_1876166.c">
+      <Filter>소스 파일\Assignment1</Filter>
+    </ClCompile>
+    <ClCompile Include="Queue_1876166.c">
+      <Filter>소스 파일\Assignment1</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -139,15 +139,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\Desktop\2020-2\1.자료 구조\DataStructure\DS_Project1\DS_Project1\Maze.c" />
+    <ClCompile Include="..\..\..\..\Desktop\2020-2\1.자료 구조\DataStructure\DS_Project1\DS_Project1\num9.c" />
     <ClCompile Include="factorial_for.c" />
     <ClCompile Include="factorial_recursive.c" />
     <ClCompile Include="fast_power.c" />
     <ClCompile Include="fib_iter.c" />
     <ClCompile Include="fib_recursive.c" />
     <ClCompile Include="hanoi.c" />
+    <ClCompile Include="Maze1.c" />
+    <ClCompile Include="Maze_1876166.c" />
+    <ClCompile Include="num10.c" />
+    <ClCompile Include="qqq.c" />
+    <ClCompile Include="poly_1.c" />
+    <ClCompile Include="poly_2.c" />
     <ClCompile Include="postFix.c" />
+    <ClCompile Include="Queue_1876166.c" />
     <ClCompile Include="slow_power.c" />
     <ClCompile Include="Stack.c" />
+    <ClCompile Include="Stack5.c" />
+    <ClCompile Include="try1.c" />
+    <ClCompile Include="try2.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
