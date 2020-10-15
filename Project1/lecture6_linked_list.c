@@ -14,6 +14,7 @@ ListNode* insert_first(ListNode* head, int value) {
 	head = p;
 	return head;
 }
+
 ListNode* insert(ListNode* head, ListNode* pre, element value) {
 	ListNode* p = (ListNode*)malloc(sizeof(ListNode));
 	p->data = value;
@@ -21,18 +22,27 @@ ListNode* insert(ListNode* head, ListNode* pre, element value) {
 	pre->link = p;
 	return head;
 }
+
 ListNode* delete_first(ListNode* head) {
-	ListNode* removed;
 	if (head == NULL) return NULL;
-	removed = head;
-	head = removed->link;
+	//ListNode* removed;
+	//if (head == NULL) return NULL;
+	//removed = head;
+	//head = removed->link;
+	//free(removed);
+	//return head;
+	return head->link;
+}
+
+ListNode* delete(ListNode* head, ListNode* pre) {
+	ListNode* removed;
+	removed = pre->link;
+	pre->link = removed->link;
 	free(removed);
 	return head;
-}
-ListNode* delete(ListNode* head, ListNode* pre) {
-	ListNode* p = pre->link->link;
-	pre->link = p;
-	return head;
+	//ListNode* p = pre->link->link;
+	//pre->link = p;
+	//return head;
 }
 void print_list(ListNode* head) {
 	for (ListNode* p = head; p != NULL; p =p->link) {
@@ -43,15 +53,20 @@ void print_list(ListNode* head) {
 
 int main() {
 	ListNode* head = NULL;
+	ListNode* tail = head;
 	
 	for (int i = 0; i < 5; i++) {
 		head = insert_first(head, i);
 		print_list(head);
 	}
+	tail = head;
+	print_list(tail);
 	for (int i = 0; i < 5; i++) {
 		head = delete_first(head, i);
 		print_list(head);
 	}
+	print_list(tail);
+	tail = head;
+	print_list(tail);
 	return 0;
 }
-
