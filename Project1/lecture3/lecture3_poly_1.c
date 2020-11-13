@@ -36,15 +36,15 @@ void print_poly(polynomial p) {
 	printf("%3.1f \n", p.coef[p.degree]);
 }
 
-//int main(void) {
-//	polynomial a = { 5, {3, 6, 0, 0, 0, 10} };
-//	polynomial b = { 4, {7, 0, 5, 0, 1} };
-//	polynomial c;
-//
-//	print_poly(a);
-//	print_poly(b);
-//	c = poly_add1(a, b);
-//	printf("--------------------------------\n");
-//	print_poly(c);
-//	return 0;
-//}
+int main(void) {
+	polynomial a = { 5, {3, 6, 0, 0, 0, 10} };
+	polynomial b = { 4, {7, 0, 5, 0, 1} };
+	polynomial c;
+
+	print_poly(a);
+	print_poly(b);
+	c = poly_add1(a, b);
+	printf("--------------------------------\n");
+	print_poly(c);
+	return 0;
+}

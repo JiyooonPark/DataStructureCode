@@ -28,70 +28,163 @@
     <Filter Include="소스 파일\Quiz1">
       <UniqueIdentifier>{c06eb291-909f-44f2-ae0b-f4bba19a1e1f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\chapter5">
+      <UniqueIdentifier>{35093019-6ef9-4323-a313-814380d1457c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\chapter6">
+      <UniqueIdentifier>{300ae320-2f6a-46a1-bfda-23fb8869d151}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\chapter7">
+      <UniqueIdentifier>{74126aae-db39-46c3-9b23-0ec7f9b1a38c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\lecture8">
+      <UniqueIdentifier>{336305b7-bfc1-4b6a-9e6f-1b683c5568ce}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="factorial_recursive.c">
-      <Filter>소스 파일\chapter2</Filter>
-    </ClCompile>
-    <ClCompile Include="factorial_for.c">
-      <Filter>소스 파일\chapter2</Filter>
-    </ClCompile>
-    <ClCompile Include="slow_power.c">
-      <Filter>소스 파일\chapter2</Filter>
-    </ClCompile>
-    <ClCompile Include="fast_power.c">
-      <Filter>소스 파일\chapter2</Filter>
-    </ClCompile>
-    <ClCompile Include="fib_recursive.c">
-      <Filter>소스 파일\chapter2</Filter>
-    </ClCompile>
-    <ClCompile Include="fib_iter.c">
-      <Filter>소스 파일\chapter2</Filter>
-    </ClCompile>
     <ClCompile Include="postFix.c">
       <Filter>소스 파일\Quiz1</Filter>
-    </ClCompile>
-    <ClCompile Include="hanoi.c">
-      <Filter>소스 파일\chapter2</Filter>
     </ClCompile>
     <ClCompile Include="Stack.c">
       <Filter>소스 파일\Quiz1</Filter>
     </ClCompile>
-    <ClCompile Include="poly_1.c">
+    <ClCompile Include="lecture2_factorial_for.c">
+      <Filter>소스 파일\chapter2</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture2_factorial_recursive.c">
+      <Filter>소스 파일\chapter2</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture2_fast_power.c">
+      <Filter>소스 파일\chapter2</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture2_fib_iter.c">
+      <Filter>소스 파일\chapter2</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture2_fib_recursive.c">
+      <Filter>소스 파일\chapter2</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture2_hanoi.c">
+      <Filter>소스 파일\chapter2</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture2_slow_power.c">
+      <Filter>소스 파일\chapter2</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture3_poly_1.c">
       <Filter>소스 파일\chapter3</Filter>
     </ClCompile>
-    <ClCompile Include="poly_2.c">
+    <ClCompile Include="lecture3_poly_2.c">
       <Filter>소스 파일\chapter3</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Desktop\2020-2\1.자료 구조\DataStructure\DS_Project1\DS_Project1\Maze.c">
+    <ClCompile Include="lecture4_Maze1.c">
+      <Filter>소스 파일\chapter4</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture4_num10.c">
+      <Filter>소스 파일\chapter4</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture4_Stack5.c">
+      <Filter>소스 파일\chapter4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\2020-2\1.자료 구조\DataStructure\DS_Project1\DS_Project1\assignment_Maze.c">
       <Filter>소스 파일\Assignment1</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Desktop\2020-2\1.자료 구조\DataStructure\DS_Project1\DS_Project1\num9.c">
+    <ClCompile Include="assignment_Maze_1876166.c">
       <Filter>소스 파일\Assignment1</Filter>
     </ClCompile>
-    <ClCompile Include="qqq.c">
+    <ClCompile Include="..\..\..\..\Desktop\2020-2\1.자료 구조\DataStructure\DS_Project1\DS_Project1\assignment_num9.c">
+      <Filter>소스 파일\Assignment1</Filter>
+    </ClCompile>
+    <ClCompile Include="assignment_Queue_1876166.c">
+      <Filter>소스 파일\Assignment1</Filter>
+    </ClCompile>
+    <ClCompile Include="assignment_try1.c">
+      <Filter>소스 파일\Assignment1</Filter>
+    </ClCompile>
+    <ClCompile Include="assignment_try2.c">
+      <Filter>소스 파일\Assignment1</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture4_stack.c">
+      <Filter>소스 파일\chapter4</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture4_stack2.c">
+      <Filter>소스 파일\chapter4</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture4_stack3.c">
+      <Filter>소스 파일\chapter4</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture5_linesr_queue.c">
+      <Filter>소스 파일\chapter5</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture5_circular_queue.c">
+      <Filter>소스 파일\chapter5</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture5_deque.c">
+      <Filter>소스 파일\chapter5</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture6_linked_list.c">
+      <Filter>소스 파일\chapter6</Filter>
+    </ClCompile>
+    <ClCompile Include="linkedList_ans.c">
+      <Filter>소스 파일\chapter6</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture6_linked_list_search.c">
+      <Filter>소스 파일\chapter6</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture6_linked_list_merge.c">
+      <Filter>소스 파일\chapter6</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture6_linked_list_reverse.c">
+      <Filter>소스 파일\chapter6</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture6_linked_list_word.c">
+      <Filter>소스 파일\chapter6</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture6_linked_list_poly.c">
+      <Filter>소스 파일\chapter6</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture7_linked_list_circular.c">
+      <Filter>소스 파일\chapter7</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture7_linked_list_double.c">
+      <Filter>소스 파일\chapter7</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture7_linked_list_stack.c">
+      <Filter>소스 파일\chapter7</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture7_linked_list_queue.c">
+      <Filter>소스 파일\chapter7</Filter>
+    </ClCompile>
+    <ClCompile Include="check_maze.c">
+      <Filter>소스 파일\Assignment1</Filter>
+    </ClCompile>
+    <ClCompile Include="maze_1876166.c">
+      <Filter>소스 파일\Assignment1</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture8_tree_linked.c">
+      <Filter>소스 파일\lecture8</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture8_tree_traverse_loop.c">
+      <Filter>소스 파일\lecture8</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture8_treee_traverse_recursive.c">
+      <Filter>소스 파일\lecture8</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture8_tree_evaluation.c">
+      <Filter>소스 파일\lecture8</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture8_tree_directory_size_sum.c">
+      <Filter>소스 파일\lecture8</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture8_tree_count_node.c">
+      <Filter>소스 파일\lecture8</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture8_binary_thread_tree.c">
+      <Filter>소스 파일\lecture8</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture8_binary_search_tree.c">
+      <Filter>소스 파일\lecture8</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture3_typedef_usage.c">
       <Filter>소스 파일\chapter3</Filter>
-    </ClCompile>
-    <ClCompile Include="Maze1.c">
-      <Filter>소스 파일\chapter4</Filter>
-    </ClCompile>
-    <ClCompile Include="Stack5.c">
-      <Filter>소스 파일\chapter4</Filter>
-    </ClCompile>
-    <ClCompile Include="num10.c">
-      <Filter>소스 파일\chapter4</Filter>
-    </ClCompile>
-    <ClCompile Include="try1.c">
-      <Filter>소스 파일\Assignment1</Filter>
-    </ClCompile>
-    <ClCompile Include="try2.c">
-      <Filter>소스 파일\Assignment1</Filter>
-    </ClCompile>
-    <ClCompile Include="Maze_1876166.c">
-      <Filter>소스 파일\Assignment1</Filter>
-    </ClCompile>
-    <ClCompile Include="Queue_1876166.c">
-      <Filter>소스 파일\Assignment1</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

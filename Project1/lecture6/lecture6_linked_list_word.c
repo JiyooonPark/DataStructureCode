@@ -91,14 +91,14 @@ ListNode* reverse(ListNode* head) {
 	}
 	return q;
 }
-int main() {
-	ListNode* head1 = NULL;
-	ListNode* head2 = NULL;
-	element e[6] = { "Apple", "b", "c", "d", "E", "f" };
-	for (int i = 0; i < 6; i++) {
-		head1 = insert_first(head1, e[i]);
-
-	}print_list(head1);
-	head2 = reverse(head1);
-	print_list(head2);
-}
+//int main() {
+//	ListNode* head1 = NULL;
+//	ListNode* head2 = NULL;
+//	element e[6] = { "Apple", "b", "c", "d", "E", "f" };
+//	for (int i = 0; i < 6; i++) {
+//		head1 = insert_first(head1, e[i]);
+//
+//	}print_list(head1);
+//	head2 = reverse(head1);
+//	print_list(head2);
+//}
