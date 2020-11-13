@@ -1,79 +1,64 @@
 #include <stdio.h>
+#include "lecture8_tree.c"
 
-typedef struct TreeNode {
-	int key;
-	struct TreeNode* right, * left;
-}TreeNode;
-
-
-//iterative search tree
-TreeNode* search(TreeNode* node, int key) {
-	if (node == NULL) return NULL;
-	if (key == node->key) return node;
-	else if (key < node->key) {
-		search(node->left, key);
-	}
-	else {
-		return search(node->right, key);
-	}
+TreeNode* search(TreeNode* root, int key) {
+	if (root == NULL) return NULL;
+	if (root->data == key) return key;
+	else if (key < root->data)
+		return search(root->left, key);
+	else
+		return search(root->right, key);
 }
 
-
-TreeNode* new_node(int item) {
-	TreeNode* temp = (TreeNode*)malloc(sizeof(TreeNode));
-	temp->key = item;
-	temp->left = temp->right = NULL;
-	return temp;
+TreeNode* search_iter(TreeNode* root, int key) {
+	while (root) {
+		if (root->data == key) return root;
+		else if (key < root->data) root = root->left;
+		else root = root->right;
+	}
+	return NULL;
 }
 
-
-//insert node
-TreeNode* insert_node(TreeNode* node, int key) {
-	//how does this change the actual node?
-	if (node == NULL) return new_node(key);
-	if (key < node->key) {
-		node->left = insert_node(node->left, key);
-	}
-	else if (key > node->key) {
-		node->right = insert_node(node->right, key);
-	}
-	return node;
+TreeNode* new_node(int value) {
+	TreeNode* p;
+	p->data = value;
+	p->right = NULL;
+	p->left = NULL;
+	return p;
 }
 
-
-TreeNode* min_value_node(TreeNode* node) {
-	TreeNode* current = node;
-	while (current->left != NULL) {
-		current = current->left;
-	}
-	return current;
+TreeNode* insert(TreeNode* root, int value) {
+	if (root == NULL) return new_node(value);
+	else if (value < root->data) 
+		root->left = insert(root->left, value);
+	else  
+		root->right= insert(root->right, value);
+	return root;
+}
+TreeNode* min_value(TreeNode* root) {
+	while (root->left != NULL) root = root->left;
+	return root;
 }
 
-
-//delete node
-TreeNode* delete_node(TreeNode* root, int key) {
+TreeNode* delete(TreeNode* root, int key) {
 	if (root == NULL) return root;
-	if (key < root->key) {
-		root->left = delete_node(root->left, key);
-	}
-	else if (key > root->key) {
-		root->right = delete_node(root->right, key);
-	}
+	else if (key < root->data)
+		return delete(root->left, key);
+	else if (key > root->data)
+		return delete(root->right, key);
 	else {
 		if (root->left == NULL) {
 			TreeNode* temp = root->right;
-			free(root);
-			return temp;
+			root = temp;
 		}
 		else if (root->right == NULL) {
-		 	TreeNode* temp = root->left;
-			free(root);
-			return temp;
+			TreeNode* temp = root->left;
+			root = temp;
 		}
-		
-		TreeNode* temp = min_value_node(root->right);
-		root->key = temp->key;
-		root->right = delete_node(root->right, temp->key);
+		TreeNode* temp = min_value(root->right);
+		root->data = temp->data;
+		root->right = delete(root->right, temp->data);
+		return root;
 	}
-	return root;
+	
 }
